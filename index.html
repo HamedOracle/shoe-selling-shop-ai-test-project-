@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nox - Premium Footwear</title>
+    <meta name="description" content="Discover premium footwear at Nox. Quality shoes for every step of your journey.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner"></div>
+        <p class="loading-text">Loading Nox...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="#" class="brand-link" aria-label="Nox Home">
+                        <span class="brand-logo">NOX</span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list" role="menubar">
+                        <li class="nav-item" role="none">
+                            <a href="#home" class="nav-link" role="menuitem">Home</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="#products" class="nav-link" role="menuitem">Products</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="#about" class="nav-link" role="menuitem">About</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" type="button">
+                        <span class="theme-icon" id="theme-icon">🌙</span>
+                    </button>
+                    <button class="cart-button" aria-label="Shopping cart" type="button">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu" type="button">
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" role="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 id="hero-title" class="hero-title">
+                        Step into <span class="highlight">Excellence</span>
+                    </h1>
+                    <p class="hero-description">
+                        Discover premium footwear crafted for the modern lifestyle. 
+                        Quality, comfort, and style in every step.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" type="button">
+                            Shop Collection
+                        </button>
+                        <button class="btn btn-secondary" type="button">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="shoe-showcase">
+                        <div class="shoe-card featured-shoe">
+                            <div class="shoe-image">
+                                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop&crop=center" 
+                                     alt="Premium running shoe in black and white" 
+                                     loading="lazy">
+                            </div>
+                            <div class="shoe-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products" aria-labelledby="products-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="products-title" class="section-title">Featured Collection</h2>
+                    <p class="section-description">
+                        Handpicked selections of our finest footwear
+                    </p>
+                </div>
+                
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be loaded here -->
+                </div>
+                
+                <div class="products-actions">
+                    <button class="btn btn-outline" id="load-more" type="button">
+                        Load More Products
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 id="about-title" class="section-title">Crafting Excellence Since Day One</h2>
+                        <p class="about-description">
+                            At Nox, we believe that great shoes are more than just footwear – 
+                            they're a statement of quality, comfort, and style. Every pair is 
+                            meticulously crafted using premium materials and innovative design.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <div class="feature-icon">✨</div>
+                                <h3 class="feature-title">Premium Quality</h3>
+                                <p class="feature-description">Only the finest materials make it into our shoes</p>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🎯</div>
+                                <h3 class="feature-title">Perfect Fit</h3>
+                                <p class="feature-description">Engineered for comfort and performance</p>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🌱</div>
+                                <h3 class="feature-title">Sustainable</h3>
+                                <p class="feature-description">Committed to environmentally responsible practices</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&h=400&fit=crop&crop=center" 
+                             alt="Crafting process of premium shoes" 
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2 id="contact-title" class="section-title">Get in Touch</h2>
+                        <p class="contact-description">
+                            Have questions about our products? We're here to help.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-text">
+                                    <h3>Email</h3>
+                                    <p>hello@nox.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-text">
+                                    <h3>Phone</h3>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-text">
+                                    <h3>Address</h3>
+                                    <p>123 Fashion Street<br>New York, NY 10001</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                            <div class="form-error" id="name-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                            <div class="form-error" id="email-error"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                            <div class="form-error" id="message-error"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">NOX</div>
+                    <p class="footer-description">
+                        Premium footwear for the modern lifestyle.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3 class="footer-title">Products</h3>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Running Shoes</a></li>
+                            <li><a href="#" class="footer-link">Casual Shoes</a></li>
+                            <li><a href="#" class="footer-link">Dress Shoes</a></li>
+                            <li><a href="#" class="footer-link">Boots</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">Support</h3>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Size Guide</a></li>
+                            <li><a href="#" class="footer-link">Returns</a></li>
+                            <li><a href="#" class="footer-link">Shipping</a></li>
+                            <li><a href="#" class="footer-link">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">Company</h3>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">About Us</a></li>
+                            <li><a href="#" class="footer-link">Careers</a></li>
+                            <li><a href="#" class="footer-link">Press</a></li>
+                            <li><a href="#" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Nox. All rights reserved.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
